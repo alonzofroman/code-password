@@ -1,20 +1,24 @@
+/* Body */
 body {
     background-color:rgb(69, 196, 235);
     color: black;
 }
 
+/* Header */
 header h1 {
     display: block;
     text-align: center;
     padding-bottom: 100px;
 }
 
+/* Button */
 #begin-button {
     display: block;
     text-align: center;
     align-items: center;
 }
 
+/* Footer */
 footer {
     display: block;
     text-align: center;

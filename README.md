@@ -10,6 +10,9 @@ The goal of this project was to create a random password generator. The paramete
 
 <img src="./assets/images/site-screenshot.jpg">
 
+## Code Snippet
+<img src="./assets/images/code-snippet.jpg>
+
 ## Steps
 - Created the repository and readme file
 
@@ -28,6 +31,9 @@ The goal of this project was to create a random password generator. The paramete
 - Styled the page in CSS 
 
 - Finalized Readme
+
+## Deployed Link
+- [https://alonzofroman.github.io/omg-so-random-password/](#)
 
 ## Technologies Used
 - [HTML] (https://developer.mozilla.org/en-US/docs/Web/HTML)

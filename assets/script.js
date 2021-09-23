@@ -1,12 +1,15 @@
+//Variables to be called upon from confirm boxes later
+
 var characters = " ";
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerChars = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789"
 var specialChars = "!@#$%^&*()~?<>|\}]{[+=_-"
 
+// Parent Generate function - all variables are decided in this
 function generate () {
 
-
+    //Decides how many characters the password will be
     let length = prompt("How many characters? (Between 8 and 128)", "Please write in integers (ex. 16).");
     if (length < 8 || length > 128) {
         window.alert("Please enter a number within 8 and 128.");
@@ -15,13 +18,32 @@ function generate () {
         window.alert("Please enter a number");
         return; }
     
-    let useLower = confirm("Use Lowercase letters?");
+
+        //Decides if lowercase letters will be used
+    let useLower = confirm("Use ;owercase letters?");
     if (useLower) {
         characters = characters.concat(lowerChars);
     }
 
-    console.log(characters);
+    // Decides if uppercase letters will be used
+    let useUpper = confirm("Use uppercase letters?");
+    if (useUpper) {
+        characters = characters.concat(upperChars);
+    }
+
+    // Decides if numbers will be used
+    let useNumbers = confirm("Use numbers?");
+    if (useNumbers) {
+        characters = characters.concat(numbers);
+    }
+
+    //Decides if special characters will be used
+    let useSpecial = confirm("Use special characters? (ex. #$%)");
+    if (useSpecial) {
+        characters = characters.concat(specialChars);
+    }
     
+    console.log(characters)
     }
     
 

@@ -1,10 +1,12 @@
-
+var characters = " ";
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerChars = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789"
 var specialChars = "!@#$%^&*()~?<>|\}]{[+=_-"
 
 function generate () {
+
+
     let length = prompt("How many characters? (Between 8 and 128)", "Please write in integers (ex. 16).");
     if (length < 8 || length > 128) {
         window.alert("Please enter a number within 8 and 128.");
@@ -13,7 +15,12 @@ function generate () {
         window.alert("Please enter a number");
         return; }
     
-    
+    let useLower = confirm("Use Lowercase letters?");
+    if (useLower) {
+        characters = characters.concat(lowerChars);
+    }
+
+    console.log(characters);
     
     }
     

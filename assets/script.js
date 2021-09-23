@@ -1,6 +1,6 @@
 //Variables to be called upon from confirm boxes later
 
-var characters = " ";
+var characters = "";
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerChars = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789"
@@ -20,7 +20,7 @@ function generate () {
     
 
         //Decides if lowercase letters will be used
-    let useLower = confirm("Use ;owercase letters?");
+    let useLower = confirm("Use lowercase letters?");
     if (useLower) {
         characters = characters.concat(lowerChars);
     }
@@ -43,8 +43,15 @@ function generate () {
         characters = characters.concat(specialChars);
     }
     
-    console.log(characters)
+    //Generates the actual password
+    let passWord = "";
+    for (let i = 0; i < length; i++) {
+        passWord += characters.charAt(Math.floor(Math.random() * characters.length));
     }
+
+        console.log(passWord);
+
+    } //Generate function end bracket
     
 
 generate ();

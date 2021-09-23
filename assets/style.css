@@ -13,3 +13,8 @@ header h1 {
     text-align: center;
     align-items: center;
 }
+
+footer {
+    display: block;
+    text-align: center;
+}

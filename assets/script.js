@@ -49,50 +49,10 @@ function generate () {
         passWord += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
-        console.log(passWord);
+
+    window.alert(passWord);
 
     } //Generate function end bracket
     
 
-generate ();
-
-
-
-// function Begin () {
-//     var 
-//    
-//         Begin ();
-// }   
-
-// function decideLower () {
-//     var lowercase = prompt("Include lowercase letters?", "Please write as yes or no.");
-// }
-
-// function decideUpper () {
-//     var uppercase = prompt("Include uppercase letters?", "Please write as yes or no.");
-// }
-
-// function decideNumber () {
-//     var numbers = prompt("Include numbers?", "Please write as yes or no.");
-// }
-
-// function decideSpecial () {
-//     var special = prompt("Include special characters? (ex. !@#$", "Please write as yes or no.");
-// }
-
-
-// // var button = document.getElementsByTagName("button");  
-// //   button[1].onclick = 
-
-
-   
-//     }
-//     else decideLower () 
-        
-//     if (lowercase !=="yes" || lowercase !=="no") {
-//             window.alert("Please write as yes or no");
-//         }
-//         else decideUpper ()
-    
-    
 

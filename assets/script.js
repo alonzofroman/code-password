@@ -49,7 +49,7 @@ function generate () {
         passWord += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
-
+    // Displays the generated password in an alert box
     window.alert(passWord);
 
     } //Generate function end bracket
